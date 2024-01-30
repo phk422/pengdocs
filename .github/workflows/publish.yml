@@ -1,0 +1,48 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    tags:
+      - 'v*'
+    paths-ignore:
+      - LICENSE
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # 部署运行环境搭建
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@main
+        with:
+          persist-credentials: false
+          fetch-depth: 0 # github代码拉取深度
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Setup Node  🎬
+        uses: actions/setup-node@main
+        with:
+          node-version: 'lts/*'
+      - name: Build 🔧
+        run: |
+          pnpm i
+          pnpm docs:build
+          ls -lrth
+      - name: 📲 Push To GitHub Pages
+        uses: ftnext/action-push-ghpages@v1.0.0
+        with:
+          build_dir: dist
+          github_token: ${{ secrets.GIT_TOKEN }}
+
+      - run: npx changelogithub --no-group
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GIT_TOKEN}}
+
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@4.1.5
+      #   with:
+      #     token: ${{ secrets.GIT_TOKEN }}
+      #     branch: gh-pages
+      #     folder: dist

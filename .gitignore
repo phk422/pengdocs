@@ -1,0 +1,11 @@
+node_modules
+dist
+package-lock.json
+
+.cache
+.test
+
+.eslintcache
+
+docs/.vitepress/dist
+docs/.vitepress/cache

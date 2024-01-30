@@ -1,0 +1,38 @@
+{
+  "name": "pengdocs",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@8.6.12",
+  "description": "我的个人博客",
+  "author": "penghongkun",
+  "license": "MIT",
+  "keywords": [
+    "penghongkun",
+    "blog",
+    "docs",
+    "vitepress"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "docs:dev": "vitepress dev docs --port 4576 --host",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-format": "^0.1.0",
+    "lint-staged": "^15.2.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.3.3",
+    "vitepress": "1.0.0-rc.40",
+    "vue": "^3.4.15"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
+  }
+}
