@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import viteConfig from './vite.config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -49,4 +50,5 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/pengdocs/logo.png' }],
   ],
+  vite: viteConfig,
 })

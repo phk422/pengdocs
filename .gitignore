@@ -9,3 +9,5 @@ package-lock.json
 
 docs/.vitepress/dist
 docs/.vitepress/cache
+
+components.d.ts
