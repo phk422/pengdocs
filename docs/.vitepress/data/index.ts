@@ -89,7 +89,3 @@ export const QuotesArray = [
   '我希望在繁华尽处，寻一抹静谧，泛舟湖上，三五好友，一壶老酒，家人作伴，唱歌会友。来吧，于绿野间、阳光下创造美好，治愈青春。',
   '“日日行不怕千万里，天天讲不吝千万言，时时做不惧千万事。”——《人民日报》',
 ]
-
-export function getQuotesArrayRand() {
-  return QuotesArray[Math.floor(Math.random() * QuotesArray.length)]
-}

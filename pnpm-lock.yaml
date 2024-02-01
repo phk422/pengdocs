@@ -23,6 +23,12 @@ devDependencies:
   lint-staged:
     specifier: ^15.2.0
     version: 15.2.0
+  lodash-es:
+    specifier: ^4.17.21
+    version: 4.17.21
+  peng-txtanime:
+    specifier: ^1.5.3
+    version: 1.5.3
   simple-git-hooks:
     specifier: ^2.9.0
     version: 2.9.0
@@ -2932,6 +2938,10 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
+  /gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+    dev: true
+
   /gzip-size@6.0.0:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
     engines: {node: '>=10'}
@@ -3262,6 +3272,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
+    dev: true
+
+  /lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: true
 
   /lodash.merge@4.6.2:
@@ -3600,6 +3614,12 @@ packages:
 
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+    dev: true
+
+  /peng-txtanime@1.5.3:
+    resolution: {integrity: sha512-B4GzKjOLuE2U6NxJFYFDBU6Gv5Td79FiygA7TFgVlaikv+//tLL5H1AnYphwdumf3kHjHYHVIY43ryypGM0WxQ==}
+    dependencies:
+      gsap: 3.12.5
     dev: true
 
   /perfect-debounce@1.0.0:
