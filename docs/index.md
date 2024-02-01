@@ -26,4 +26,6 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<RotatingQuote pt10 />
+<ClientOnly>
+  <RotatingQuote pt10 />
+</ClientOnly>
