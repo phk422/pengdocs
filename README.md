@@ -1,3 +1,4 @@
-# PengDocs
+<h1 align="center"> PengDocs </h1>
+<p align="center">✒️ 这是我写博客和记录笔记的地方✍️</p>
 
-我的个人博客
+[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
