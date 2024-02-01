@@ -14,5 +14,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="txt" style="color: var(--vp-c-text-2)" text-center text-18px leading-28px sm:text-20px sm:leading-32px md:text-24px md:leading-36px />
+  <div class="txt" style="color: var(--vp-c-text-2)" h-25 text-center text-18px leading-28px sm:text-20px sm:leading-32px md:text-24px md:leading-36px />
 </template>

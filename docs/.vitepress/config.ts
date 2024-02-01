@@ -7,6 +7,7 @@ export default defineConfig({
   outDir: '../dist',
   title: 'PengDocs',
   description: '我的个人博客',
+  lang: 'zh-Hans',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
