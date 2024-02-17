@@ -26,12 +26,12 @@ devDependencies:
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
-  peng-txtanime:
-    specifier: ^1.5.3
-    version: 1.5.3
   simple-git-hooks:
     specifier: ^2.9.0
     version: 2.9.0
+  txtanime.js:
+    specifier: ^1.7.0
+    version: 1.7.0
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -3616,12 +3616,6 @@ packages:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
     dev: true
 
-  /peng-txtanime@1.5.3:
-    resolution: {integrity: sha512-B4GzKjOLuE2U6NxJFYFDBU6Gv5Td79FiygA7TFgVlaikv+//tLL5H1AnYphwdumf3kHjHYHVIY43ryypGM0WxQ==}
-    dependencies:
-      gsap: 3.12.5
-    dev: true
-
   /perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
     dev: true
@@ -4093,6 +4087,12 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+    dev: true
+
+  /txtanime.js@1.7.0:
+    resolution: {integrity: sha512-PhFoeK/z/vF2VkG2YfQKETOMeBfMb+G6kNjW59TFINf+8zZuYE3H2xm2lnbYfySM9MsirEuny/hMPqY7saonpA==}
+    dependencies:
+      gsap: 3.12.5
     dev: true
 
   /type-check@0.4.0:

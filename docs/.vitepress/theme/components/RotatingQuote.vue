@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { onMounted } from 'vue'
-import { TxtAnime } from 'peng-txtanime'
+import { TxtAnime } from 'txtanime.js'
 import { sampleSize } from 'lodash-es'
 import { QuotesArray } from '../../data'
 
