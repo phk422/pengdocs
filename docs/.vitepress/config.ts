@@ -28,16 +28,15 @@ export default defineConfig({
       next: '下一页',
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: '首页', link: '/' },
+      { text: '前端工程化', link: '/前端工程化/index.md', activeMatch: '/前端工程化/' },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '前端工程化',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: 'Monorepo入门与实践', link: '/前端工程化/2024-03-18-monorepo.md' },
         ],
       },
     ],
