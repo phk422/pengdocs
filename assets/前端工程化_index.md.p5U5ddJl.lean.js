@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,V as o}from"./chunks/framework.YMvd6-zg.js";const f=JSON.parse('{"title":"前端工程化","description":"","frontmatter":{},"headers":[],"relativePath":"前端工程化/index.md","filePath":"前端工程化/index.md"}'),r={name:"前端工程化/index.md"},n=o("",9),p=[n];function i(_,c,s,d,l,h){return t(),a("div",null,p)}const u=e(r,[["render",i]]);export{f as __pageData,u as default};
