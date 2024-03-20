@@ -1,14 +1,15 @@
 <script lang="ts" setup>
 import { onMounted } from 'vue'
-import { TxtAnime } from 'txtanime.js'
 import { sampleSize } from 'lodash-es'
 import { QuotesArray } from '../../data'
 
 onMounted(() => {
-  void new TxtAnime('.txt', {
-    effect: 'txt-an-9',
-    text: sampleSize(QuotesArray, Math.floor(QuotesArray.length / 4), undefined),
-    duration: 0.8,
+  import('txtanime.js').then(({ TxtAnime }) => {
+    void new TxtAnime('.txt', {
+      effect: 'txt-an-9',
+      text: sampleSize(QuotesArray, Math.floor(QuotesArray.length / 4)),
+      duration: 0.8,
+    })
   })
 })
 </script>
